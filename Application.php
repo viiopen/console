@@ -15,7 +15,7 @@ use Symfony\Component\Console\Descriptor\TextDescriptor;
 use Symfony\Component\Console\Descriptor\XmlDescriptor;
 use Symfony\Component\Console\Helper\DebugFormatterHelper;
 use Symfony\Component\Console\Helper\ProcessHelper;
-use Symfony\Component\Console\Helper\QuestionHelper;
+//use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -915,12 +915,12 @@ class Application
     {
         return new HelperSet(array(
             new FormatterHelper(),
-            //new DialogHelper(false),
+            // new DialogHelper(false),
             new ProgressHelper(false),
             new TableHelper(false),
             new DebugFormatterHelper(),
             new ProcessHelper(),
-            new QuestionHelper(),
+            // new QuestionHelper(),
         ));
     }
 
